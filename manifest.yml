@@ -1,0 +1,6 @@
+---
+applications:
+- name: hap-test
+  stack: cflinuxfs2
+  memory: 16M
+  command: ./haproxy -f haproxy.cfg

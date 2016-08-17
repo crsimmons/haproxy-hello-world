@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd $1
+
+wget http://www.haproxy.org/download/1.6/src/haproxy-1.6.8.tar.gz
+tar xvf haproxy-1.6.8.tar.gz
+cd haproxy-1.6.8
+make TARGET=linux2628 ARCH=native
+mv haproxy ../haproxy
+
+# ./haproxy -f ../haproxy.cfg
