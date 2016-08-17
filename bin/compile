@@ -7,5 +7,3 @@ tar xvf haproxy-1.6.8.tar.gz
 cd haproxy-1.6.8
 make TARGET=linux2628 ARCH=native
 mv haproxy ../haproxy
-
-# ./haproxy -f ../haproxy.cfg

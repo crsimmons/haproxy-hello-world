@@ -2,5 +2,6 @@
 applications:
 - name: hap-test
   stack: cflinuxfs2
+  buildpack: https://github.com/jpluscplusm/cf-devolved-buildpack.git
   memory: 16M
   command: ./haproxy -f haproxy.cfg
