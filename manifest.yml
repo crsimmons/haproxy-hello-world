@@ -2,6 +2,7 @@
 applications:
 - name: hap-test
   stack: cflinuxfs2
-  buildpack: https://github.com/jpluscplusm/cf-devolved-buildpack.git
-  memory: 16M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
+  random-route: true
+  memory: 32M
   command: ./haproxy -f haproxy.cfg
