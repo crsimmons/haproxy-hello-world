@@ -5,4 +5,4 @@ applications:
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack
   random-route: true
   memory: 32M
-  command: ./haproxy -f haproxy.cfg
+  command: ./haproxy -f haproxy.cfg & sh boot.sh
